@@ -1,0 +1,21 @@
+.main {
+    padding: 5rem 12rem;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+.players {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hand {
+    display: flex;
+    gap: 1rem;
+}
+
+.me {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}

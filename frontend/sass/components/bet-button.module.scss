@@ -1,0 +1,19 @@
+@use '@sass/abstract/variables'as *;
+
+.main {
+    background-color: $color-light;
+    height: 10rem;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    font-size: 4.2rem;
+    font-family: $font-body;
+    font-weight: 900;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

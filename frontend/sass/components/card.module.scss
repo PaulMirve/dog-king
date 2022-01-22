@@ -1,0 +1,57 @@
+@use '@sass/abstract/variables'as *;
+
+$border: 10px;
+
+.main {
+    color: $color-light;
+    width: 15rem;
+    height: 21rem;
+    border-radius: 10px;
+    border: $border solid $color-light;
+    position: relative;
+}
+
+.number {
+    font-weight: 900;
+    font-size: 3.8rem;
+    font-family: $font-body;
+    position: absolute;
+    right: calc($border + 5px);
+    top: calc($border + 5px);
+}
+
+.yellow {
+    background-color: $color-yellow;
+}
+
+.red {
+    background-color: $color-red;
+}
+
+.blue {
+    background-color: $color-blue;
+}
+
+.black {
+    background-color: $color-joker;
+}
+
+.white {
+    background-color: $color-light;
+    color: $color-black;
+    display: grid;
+    place-items: center;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.small {
+    width: 10rem;
+    height: 16rem;
+
+    & .number {
+        font-size: 3rem;
+    }
+}

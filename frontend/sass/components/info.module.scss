@@ -1,0 +1,26 @@
+@use '@sass/abstract/variables'as *;
+
+.main {
+    text-align: center;
+}
+
+.turn {
+    font-size: 4.2rem;
+    font-weight: 700;
+    font-family: $font-body;
+    color: $color-light;
+}
+
+.name {
+    font-size: 3.2rem;
+    font-weight: 700;
+    font-family: $font-body;
+    color: $color-light;
+}
+
+.score {
+    font-size: 3.2rem;
+    font-weight: 700;
+    font-family: $font-body;
+    color: $color-light;
+}
