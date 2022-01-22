@@ -1,0 +1,12 @@
+@use '@sass/abstract/variables'as *;
+
+.main {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: $color-light;
+}

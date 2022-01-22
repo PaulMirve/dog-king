@@ -15,7 +15,9 @@ app.get('/', (req, res) => {
 });
 
 io.on('connection', (socket) => {
-    console.log('A user connected');
+    socket.on('userJoin', (userJoin) => {
+        io.emit("userJoin", userJoin)
+    });
 });
 
 server.listen(8080, () => {

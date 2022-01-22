@@ -9,7 +9,7 @@ interface Props extends ComponentPropsWithoutRef<'div'> {
     font?: 'heading' | 'body'
 }
 
-const Heading = ({ className = "", centered, variant, casing, weight, children, ...props }: Props) => {
+const Heading = ({ className = "", centered, font, variant, casing, weight, children, ...props }: Props) => {
     const getVariant = () => {
         switch (variant) {
             case 'h1':
@@ -53,7 +53,7 @@ const Heading = ({ className = "", centered, variant, casing, weight, children, 
     }
 
     return (
-        <h1 className={`${styles.main} ${getVariant()} ${getWeight()} ${casing === 'uppercase' && styles.uppercase} ${centered && 'tac'} ${className}`} {...props}>
+        <h1 className={`${styles.main} ${getVariant()} ${getWeight()} ${casing === 'uppercase' && styles.uppercase} ${centered && 'tac'} ${font === 'body' && styles.body} ${className}`} {...props}>
             {children}
         </h1>
     )

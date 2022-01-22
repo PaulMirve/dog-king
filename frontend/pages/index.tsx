@@ -13,10 +13,6 @@ import { io } from 'socket.io-client';
 const Home: NextPage = () => {
   const [turn, setTurn] = useState(1);
 
-  useEffect(() => {
-    const socket = io('http://localhost:8080', { transports: ['websocket'] });
-    console.log(socket);
-  })
   return (
     <GameContext.Provider value={{ turn }}>
       <div className={styles.main}>
